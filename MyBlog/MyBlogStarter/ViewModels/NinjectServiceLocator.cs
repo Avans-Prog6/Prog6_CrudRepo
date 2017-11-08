@@ -8,11 +8,17 @@ namespace MyBlogStarter.ViewModels
 {
     public class NinjectServiceLocator
     {
+        public NinjectServiceLocator()
+        {
+            ///Iets met een kernel?
+        }
+
         public MainViewModel Main
         {
             get
             {
-                throw new NotImplementedException("Je moet de klasse NinjectServiceLocator nog afmaken");
+                //Dit kan natuurlijk een stuk beter
+                return new MainViewModel();
             }
         }
     }
